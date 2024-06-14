@@ -2,7 +2,7 @@
 //  AddView.swift
 //  TodoListSwiftUI
 //
-//  Created by DataArt Viktor Drykin on 14.06.2024.
+//  Created by Viktor Drykin on 14.06.2024.
 //
 
 import SwiftUI
