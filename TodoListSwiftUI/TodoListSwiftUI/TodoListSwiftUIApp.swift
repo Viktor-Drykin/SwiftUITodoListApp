@@ -2,7 +2,7 @@
 //  TodoListSwiftUIApp.swift
 //  TodoListSwiftUI
 //
-//  Created by DataArt Viktor Drykin on 11.04.2024.
+//  Created by Viktor Drykin on 11.04.2024.
 //
 
 import SwiftUI
@@ -11,7 +11,9 @@ import SwiftUI
 struct TodoListSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack(root: {
+                ListView()
+            })
         }
     }
 }
