@@ -7,8 +7,22 @@
 
 import Foundation
 
+// Immutable Struct
+
 struct ItemModel: Identifiable {
-    let id: String = UUID().uuidString
+    let id: String
     let title: String
     let completed: Bool
+
+    init(id: String = UUID().uuidString, title: String, completed: Bool) {
+        self.id = id
+        self.title = title
+        self.completed = completed
+    }
+
+    func updated() -> ItemModel {
+        return ItemModel(id: id, title: title, completed: !completed)
+    }
 }
+
+extension ItemModel: Codable { }
