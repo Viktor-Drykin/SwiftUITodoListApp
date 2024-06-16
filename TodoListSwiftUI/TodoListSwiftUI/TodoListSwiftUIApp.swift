@@ -27,6 +27,7 @@ struct TodoListSwiftUIApp: App {
             NavigationStack(root: {
                 ListView()
             })
+            .style
             .environmentObject(listViewModel)
         }
     }
